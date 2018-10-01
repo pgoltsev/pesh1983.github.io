@@ -1,0 +1,10 @@
+<script>
+	var SITE_LANGUAGES = [];
+	{% for lang in site.translations[site.lang]["langs"] %}
+	SITE_LANGUAGES.push("{{ lang[0] }}");
+	{% endfor %}
+	var SITE_LANGUAGE = "{{ site.lang }}";
+</script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/lang.js"></script>

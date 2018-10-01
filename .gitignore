@@ -1,0 +1,9 @@
+# compiled site
+_site
+
+# generated files
+.sass-cache
+.jekyll-metadata
+
+# gem bundles
+vendor

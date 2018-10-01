@@ -1,0 +1,14 @@
+{% for lang in site.translations[site.lang]["langs"] %}
+    {% if site.lang == lang[0] %}
+        <img src="/images/{{ lang[0] }}.png"
+             title="{{ lang[1] | escape }}"
+             alt="{{ lang[1] | escape }}"/>
+    {% else %}
+        {% if site.lang == site.default_lang %}
+            {% capture lang_url %}/{{ lang[0] }}{% endcapture %}
+        {% else %}
+            {% capture lang_url %}/{% endcapture %}
+        {% endif %}
+        <a href="{{ lang_url }}" id="lang-selector-{{ lang[0] }}" data-lang="{{ lang[0] }}"><img src="/images/{{ lang[0] }}_sel.png" title="{{ lang[1] | escape }}" alt="{{ lang[1] | escape }}"/></a>
+    {% endif %}
+{% endfor %}

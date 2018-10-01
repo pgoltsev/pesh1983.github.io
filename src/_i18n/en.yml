@@ -1,0 +1,19 @@
+site:
+  author: Pavel Goltsev
+  title: Out Of The Box
+  description: >
+    Most good programmers do programming not because they expect to 
+    get paid or get adulation by the public, 
+    but because it is fun to program. - Linus Torvalds
+
+langs:
+  en: English
+  ru: Русский
+
+about:
+  title: About
+
+index:
+  posts: Posts
+  subscribe: subscribe
+  via_rss: via RSS
